@@ -50,8 +50,8 @@ function random(minVal,maxVal) {
 
 function Target() {
 	var self = Ti.UI.createView({
-		height:110,
-		width:100,
+		height:70,
+		width:70,
 		borderRadius:5,
 		backgroundColor:'#ffffff',
 		top:random(65,370),
@@ -59,8 +59,7 @@ function Target() {
 	});
 	
 	self.add(Ti.UI.createImageView({
-		height:100,
-		image:'nolan.jpg'
+		image:'appc.png'
 	}));
 	
 	self.addEventListener('click', function() {
@@ -94,7 +93,7 @@ function runGame() {
 			var b = Ti.UI.createAlertDialog({
 				buttonNames:["I can do better!"],
 				title:'That was awesome!',
-				message:'You whacked Nolan '+score+' times - not too shabby.  Try again?'
+				message:'You whacked the logo '+score+' times - not too shabby.  Try again?'
 			});
 			b.show();
 			
@@ -112,7 +111,7 @@ win.open();
 var a = Ti.UI.createAlertDialog({
 	buttonNames:["Let's See!"],
 	title:'Whacktanium',
-	message:'How many times can you whack Nolan before time runs out?'
+	message:'How many times can you whack the Appcelerator "A" before time runs out?'
 });
 a.show();
 
